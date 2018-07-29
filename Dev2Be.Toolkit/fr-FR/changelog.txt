@@ -1,0 +1,2 @@
+﻿Version 1.0.0-alpha.1.build.50 (Publié le 29 Juillet 2017) :
+	- Ajout du composant AutoCompleteTextBox.

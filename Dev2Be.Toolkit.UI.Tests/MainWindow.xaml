@@ -1,0 +1,26 @@
+﻿<Window x:Class="Dev2Be.Toolkit.UI.Tests.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dev2Be.Toolkit.UI.Tests"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        xmlns:dtk="clr-namespace:Dev2Be.Toolkit.Wpf;assembly=Dev2Be.Toolkit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <dtk:AutoCompleteTextBox Margin="10,63,10,322">
+            <dtk:AutoCompleteTextBox.Suggestions>
+                <System:String>Assembly</System:String>
+                <System:String>Bibliothèque</System:String>
+                <System:String>Commande</System:String>
+                <System:String>Commentaire</System:String>
+                <System:String>Cycle</System:String>
+                <System:String>Développement</System:String>
+                <System:String>Namespace</System:String>
+                <System:String>Programmation</System:String>
+                <System:String>Valeur</System:String>
+            </dtk:AutoCompleteTextBox.Suggestions>
+        </dtk:AutoCompleteTextBox>
+    </Grid>
+</Window>

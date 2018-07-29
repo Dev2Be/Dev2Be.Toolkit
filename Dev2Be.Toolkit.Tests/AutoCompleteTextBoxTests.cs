@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace Dev2Be.Toolkit.Tests
+{
+    [TestClass]
+    public class AutoCompleteTextBoxTests
+    {
+        [TestMethod]
+        public void FilterSuggestionsWithValue()
+        {
+            Wpf.AutoCompleteTextBox autoCompleteTextBox = new Wpf.AutoCompleteTextBox { Suggestions = new List<string> { "Assembly", "Bibliothèque", "Commande", "Commentaire", "Cycle", "Développement", "Namespace", "Programmation", "Valeur" } };
+            List<string> results = autoCompleteTextBox.FilterSuggestion("c");
+
+            List<string> expected = new List<string>() { "Commande", "Commentaire", "Cycle" };
+
+            if (results == expected)
+                Assert.AreEqual(true, true);
+            else
+                Assert.AreEqual(false, false);
+        }
+
+        [TestMethod]
+        public void FilterSuggestionsWithoutValue()
+        {
+            Wpf.AutoCompleteTextBox autoCompleteTextBox = new Wpf.AutoCompleteTextBox { Suggestions = new List<string>() { "Assembly", "Bibliothèque", "Commande", "Commentaire", "Cycle", "Développement", "Namespace", "Programmation", "Valeur" } };
+            List<string> results = autoCompleteTextBox.FilterSuggestion("");
+
+            Assert.AreEqual(results, default(List<string>));
+        }
+    }
+}

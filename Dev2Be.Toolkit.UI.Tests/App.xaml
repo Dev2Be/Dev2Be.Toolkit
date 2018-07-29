@@ -1,0 +1,9 @@
+﻿<Application x:Class="Dev2Be.Toolkit.UI.Tests.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Dev2Be.Toolkit.UI.Tests"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

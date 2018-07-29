@@ -3,3 +3,13 @@
 ################################################################################
 
 /.vs/Dev2Be.Toolkit/v15/Server/sqlite3/db.lock
+/.vs/Dev2Be.Toolkit/v15
+/.vs
+/Dev2Be.Toolkit/bin
+/Dev2Be.Toolkit.Tests/bin/Debug
+/Dev2Be.Toolkit.Tests/obj
+/Dev2Be.Toolkit/obj
+/Dev2Be.Toolkit.UI.Tests/bin/Debug
+/Dev2Be.Toolkit.UI.Tests/obj
+/TestResults/5ed07a90-82c6-4ef3-982a-4ad27ff83551
+/packages
