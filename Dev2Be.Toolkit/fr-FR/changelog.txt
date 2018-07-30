@@ -1,2 +1,17 @@
-﻿Version 1.0.0-alpha.1.build.50 (Publié le 29 Juillet 2017) :
-	- Ajout du composant AutoCompleteTextBox.
+﻿Version 1.0.0-alpha.2.build.113 (Publiée le 30 Juillet 2018) :
+
+• Ajout :
+	- Possibilité de sélectionner une suggestion avec la souris.
+	- Composant BrowseTextBox
+
+• Amélioration :
+	- Possibilité de cacher la liste de suggestions. (AutoCompleteTextBox)
+	- Possibilité de naviguer en cicle dans la liste de suggestions. (AutoCompleteTextBox)
+	- Affichage de la suggestion dans la zone de texte pendant la navigation dans la liste. (AutoCompleteTextBox)
+
+-----------------------------------------------------------
+
+Version 1.0.0-alpha.1.build.50 (Publiée le 29 Juillet 2018) :
+
+• Ajout :
+	- Composant AutoCompleteTextBox.

@@ -21,8 +21,13 @@ namespace Dev2Be.Toolkit.Wpf
     {
         #region Variables
         private bool previousPopupState;
+        private bool updateOriginalText = true;
+
+        private string originalText;
 
         public static readonly DependencyProperty SuggestionsProperty = DependencyProperty.RegisterAttached("Suggestions", typeof(List<string>), typeof(AutoCompleteTextBox), new PropertyMetadata(new List<string>()));
+
+        public static readonly DependencyProperty ShowSuggestionsProperty = DependencyProperty.RegisterAttached("ShowSuggestions", typeof(bool), typeof(AutoCompleteTextBox), new PropertyMetadata(true));
 
         /// <summary>
         /// Obtient ou définit la liste des suggestions affichées par l'<see cref="AutoCompleteTextBox"/>.
@@ -32,6 +37,16 @@ namespace Dev2Be.Toolkit.Wpf
         {
             get { return (List<string>)GetValue(SuggestionsProperty); }
             set { SetValue(SuggestionsProperty, value); }
+        }
+
+        /// <summary>
+        /// Obtient ou définit l'état de visibilité de la liste des suggestions.
+        /// </summary>
+        [Description("Obtient ou définit l'état de visibilité de la liste des suggestions.")]
+        public bool ShowSuggestions
+        {
+            get { return (bool)GetValue(ShowSuggestionsProperty); }
+            set { SetValue(ShowSuggestionsProperty, value); }
         }
         #endregion Variables
 
@@ -61,6 +76,7 @@ namespace Dev2Be.Toolkit.Wpf
             if (SuggestionsList != null)
             {
                 SuggestionsList.PreviewKeyDown += SuggestionsList_PreviewKeyDown;
+                SuggestionsList.PreviewMouseLeftButtonDown += SuggestionsList_PreviewMouseLeftButtonDown;
             }
 
             Window window = GetParentWindow();
@@ -72,26 +88,35 @@ namespace Dev2Be.Toolkit.Wpf
             }
         }
 
-        private Window GetParentWindow()
+        private void SuggestionsList_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            DependencyObject dependencyObject = this;
-
-            while (dependencyObject != null && !(dependencyObject is Window))
-                dependencyObject = LogicalTreeHelper.GetParent(dependencyObject);
-
-            return dependencyObject as Window;
+            Text = (ItemsControl.ContainerFromElement(sender as ListBox, e.OriginalSource as DependencyObject) as ListBoxItem).Content as string;
+            
+            SuggestionsPopup.IsOpen = false;
+            Focus();
+            Select(Text.Length, 0);
+            updateOriginalText = true;
         }
 
         protected override void OnTextChanged(TextChangedEventArgs e)
         {
+            if (!updateOriginalText)
+                return;
+
             base.OnTextChanged(e);
 
-            SuggestionsList.ItemsSource = FilterSuggestion(Text);
+            originalText = Text;
 
-            SuggestionsPopup.IsOpen = SuggestionsList.Items.Count > 0;
+            if (ShowSuggestions) 
+            {
+                SuggestionsList.ItemsSource = FilterSuggestion(originalText);
+
+                SuggestionsPopup.IsOpen = SuggestionsList.Items.Count > 0;
+            }
         }
         #endregion
 
+        #region Events
         private void AutoCompleteTextBox_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             if (SuggestionsPopup.IsOpen && !(e.OriginalSource is ListBoxItem))
@@ -105,6 +130,9 @@ namespace Dev2Be.Toolkit.Wpf
                         ListBoxItem lbi = SuggestionsList.ItemContainerGenerator.ContainerFromIndex(SuggestionsList.SelectedIndex) as ListBoxItem;
                         lbi.Focus();
                         e.Handled = true;
+                        updateOriginalText = false;
+
+                        Text = lbi.Content as string;
                         break;
                 }
             }
@@ -112,15 +140,36 @@ namespace Dev2Be.Toolkit.Wpf
 
         private void SuggestionsList_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            ListBoxItem listBoxItem = e.OriginalSource as ListBoxItem;
-
             e.Handled = true;
 
             switch (e.Key)
             {
                 case Key.Tab:
                 case Key.Enter:
-                    Text = listBoxItem.Content as string;
+                    Text = (e.OriginalSource as ListBoxItem).Content as string;
+                    break;
+                case Key.Escape:
+                    Text = originalText;
+                    break;
+                case Key.Down:
+                    if (SuggestionsList.SelectedIndex + 1 >= SuggestionsList.Items.Count)
+                        SuggestionsList.SelectedIndex = 0;
+                    else
+                        SuggestionsList.SelectedIndex++;
+
+                    Text = SuggestionsList.SelectedItem.ToString();
+
+                    e.Handled = false;
+                    break;
+                case Key.Up:
+                    if (SuggestionsList.SelectedIndex - 1 < 0)
+                        SuggestionsList.SelectedIndex = SuggestionsList.Items.Count - 1;
+                    else
+                        SuggestionsList.SelectedIndex--;
+
+                    Text = SuggestionsList.SelectedItem.ToString();
+
+                    e.Handled = false;
                     break;
                 default:
                     e.Handled = false;
@@ -132,10 +181,22 @@ namespace Dev2Be.Toolkit.Wpf
                 SuggestionsPopup.IsOpen = false;
                 Focus();
                 Select(Text.Length, 0);
+                updateOriginalText = true;
             }
         }
+        #endregion Events
 
-        internal List<string> FilterSuggestion(string value)
+        private Window GetParentWindow()
+        {
+            DependencyObject dependencyObject = this;
+
+            while (dependencyObject != null && !(dependencyObject is Window))
+                dependencyObject = LogicalTreeHelper.GetParent(dependencyObject);
+
+            return dependencyObject as Window;
+        }
+
+        internal virtual List<string> FilterSuggestion(string value)
         {
             if (string.IsNullOrEmpty(value))
                 return default(List<string>);

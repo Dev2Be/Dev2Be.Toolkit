@@ -9,18 +9,39 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <dtk:AutoCompleteTextBox Margin="10,63,10,322">
-            <dtk:AutoCompleteTextBox.Suggestions>
-                <System:String>Assembly</System:String>
-                <System:String>Bibliothèque</System:String>
-                <System:String>Commande</System:String>
-                <System:String>Commentaire</System:String>
-                <System:String>Cycle</System:String>
-                <System:String>Développement</System:String>
-                <System:String>Namespace</System:String>
-                <System:String>Programmation</System:String>
-                <System:String>Valeur</System:String>
-            </dtk:AutoCompleteTextBox.Suggestions>
-        </dtk:AutoCompleteTextBox>
+        <TabControl>
+            <TabItem Header="AutoCompleteTextBox">
+                <Grid>
+                    <dtk:AutoCompleteTextBox Margin="10,37,462,324" ShowSuggestions="{Binding Path=IsChecked, ElementName=ShowSuggestionsListCheckBox}">
+                        <dtk:AutoCompleteTextBox.Suggestions>
+                            <System:String>Assembly</System:String>
+                            <System:String>Bibliothèque</System:String>
+                            <System:String>Commande</System:String>
+                            <System:String>Commentaire</System:String>
+                            <System:String>Cycle</System:String>
+                            <System:String>Développement</System:String>
+                            <System:String>namespace</System:String>
+                            <System:String>Programmation</System:String>
+                            <System:String>private</System:String>
+                            <System:String>public</System:String>
+                            <System:String>protected</System:String>
+                            <System:String>Valeur</System:String>
+                            <System:String>Variable</System:String>
+                        </dtk:AutoCompleteTextBox.Suggestions>
+                    </dtk:AutoCompleteTextBox>
+                    <CheckBox x:Name="ShowSuggestionsListCheckBox" Content="Afficher la liste des suggestions" Margin="335,37,10,324" IsChecked="True"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="BrowseTextBox">
+                <Grid>
+                    <dtk:BrowseTextBox x:Name="BrowseTextBox1" Margin="10,10,355,351"></dtk:BrowseTextBox>
+                    <TextBlock Text="BrowseMode :" Margin="436,10,253,351" VerticalAlignment="Center"/>
+                    <ComboBox x:Name="BrowseModeComboBox" SelectedIndex="0" SelectionChanged="BrowseModeComboBox_SelectionChanged" Margin="538,10,10,351">
+                        <ComboBoxItem Content="File"/>
+                        <ComboBoxItem Content="Folder"/>
+                    </ComboBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>

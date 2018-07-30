@@ -24,5 +24,13 @@ namespace Dev2Be.Toolkit.UI.Tests
         {
             InitializeComponent();
         }
+
+        private void BrowseModeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (BrowseModeComboBox.SelectedIndex == 0)
+                BrowseTextBox1.BrowseMode = Wpf.BrowseMode.File;
+            else
+                BrowseTextBox1.BrowseMode = Wpf.BrowseMode.Folder;
+        }
     }
 }

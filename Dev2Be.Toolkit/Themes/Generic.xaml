@@ -4,5 +4,6 @@
     xmlns:local="clr-namespace:Dev2Be.Toolkit.Wpf">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/AutoCompleteTextBox/Generic.xaml"/>
+        <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/BrowseTextBox/Generic.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
