@@ -8,9 +8,9 @@ using System.Windows;
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
 [assembly: AssemblyTitle("Dev2Be.Toolkit")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Dev2Be Toolkit for WPF")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Dev2Be")]
 [assembly: AssemblyProduct("Dev2Be.Toolkit")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
@@ -52,6 +52,8 @@ using System.Windows;
 // Vous pouvez spécifier toutes les valeurs ou indiquer les numéros de build et de révision par défaut
 // en utilisant '*', comme indiqué ci-dessous :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.113")]
-[assembly: AssemblyFileVersion("1.0.0.113")]
+[assembly: AssemblyVersion("1.0.0.136")]
+[assembly: AssemblyFileVersion("1.0.0.136")]
 [assembly: AssemblyInformationalVersion("1.0.2-alpha-02")]
+[assembly: NeutralResourcesLanguage("fr-FR")]
+

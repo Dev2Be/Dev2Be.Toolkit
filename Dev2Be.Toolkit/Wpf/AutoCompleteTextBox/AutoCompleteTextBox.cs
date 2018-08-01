@@ -17,6 +17,9 @@ using System.Windows.Shapes;
 
 namespace Dev2Be.Toolkit.Wpf
 {
+    /// <summary>
+    /// Représente un contrôle qui permet d'afficher des suggestions.
+    /// </summary>
     public class AutoCompleteTextBox : TextBox
     {
         #region Variables

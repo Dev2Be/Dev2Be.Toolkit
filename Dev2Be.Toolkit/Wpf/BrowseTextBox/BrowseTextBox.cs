@@ -11,6 +11,9 @@ using System.Windows.Controls;
 
 namespace Dev2Be.Toolkit.Wpf
 {
+    /// <summary>
+    /// Représente un contrôle permettant de parcourir les fichiers ou les dossiers présent dans l'ordinateur.
+    /// </summary>
     public class BrowseTextBox : AutoCompleteTextBox
     {
         #region Variables

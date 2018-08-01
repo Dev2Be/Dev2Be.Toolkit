@@ -5,5 +5,6 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/AutoCompleteTextBox/Generic.xaml"/>
         <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/BrowseTextBox/Generic.xaml"/>
+        <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/CheckedComboBox/Generic.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

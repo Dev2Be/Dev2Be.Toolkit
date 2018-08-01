@@ -34,12 +34,24 @@
             </TabItem>
             <TabItem Header="BrowseTextBox">
                 <Grid>
-                    <dtk:BrowseTextBox x:Name="BrowseTextBox1" Margin="10,10,355,351"></dtk:BrowseTextBox>
+                    <dtk:BrowseTextBox x:Name="BrowseTextBox1" Margin="10,10,355,351"/>
                     <TextBlock Text="BrowseMode :" Margin="436,10,253,351" VerticalAlignment="Center"/>
                     <ComboBox x:Name="BrowseModeComboBox" SelectedIndex="0" SelectionChanged="BrowseModeComboBox_SelectionChanged" Margin="538,10,10,351">
                         <ComboBoxItem Content="File"/>
                         <ComboBoxItem Content="Folder"/>
                     </ComboBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="CheckedComboBox">
+                <Grid>
+                    <dtk:CheckedComboBox x:Name="CheckedComboBox1" Margin="10,10,355,351">
+                        <dtk:CheckedComboBox.Items>
+                            <ComboBoxItem Content="Item 1"/>
+                            <ComboBoxItem Content="Item 2"/>
+                            <ComboBoxItem Content="Item 3"/>
+                        </dtk:CheckedComboBox.Items>
+                    </dtk:CheckedComboBox>
+                    <TextBlock Text="{Binding Path=CheckedItems, ElementName=CheckedComboBox1}" Margin="441,10,10,348"/>
                 </Grid>
             </TabItem>
         </TabControl>

@@ -1,8 +1,15 @@
-﻿Version 1.0.0-alpha.2.build.113 (Publiée le 30 Juillet 2018) :
+﻿Version 1.0.0-alpha.3.build. (Publiée le  Aout 2018) :
 
 • Ajout :
-	- Possibilité de sélectionner une suggestion avec la souris.
-	- Composant BrowseTextBox
+	- Composant CheckedComboBox.
+
+-----------------------------------------------------------
+
+Version 1.0.0-alpha.2.build.113 (Publiée le 30 Juillet 2018) :
+
+• Ajout :
+	- Possibilité de sélectionner une suggestion avec la souris (AutoCompleteTextBox).
+	- Composant BrowseTextBox.
 
 • Amélioration :
 	- Possibilité de cacher la liste de suggestions. (AutoCompleteTextBox)
