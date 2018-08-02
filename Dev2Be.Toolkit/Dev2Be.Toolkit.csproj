@@ -70,6 +70,8 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enumerations\StringComparaison.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseMode.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseTextBox.cs" />
     <Compile Include="Wpf\CheckedComboBox\CheckedComboBox.cs" />
@@ -119,5 +121,6 @@
   <ItemGroup>
     <Resource Include="fr-FR\changelog.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

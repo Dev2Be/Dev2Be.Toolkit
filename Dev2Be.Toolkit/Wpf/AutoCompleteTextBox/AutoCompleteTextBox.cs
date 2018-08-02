@@ -206,5 +206,10 @@ namespace Dev2Be.Toolkit.Wpf
 
             return (from suggestion in Suggestions where suggestion.StartsWith(value, StringComparison.CurrentCultureIgnoreCase) select suggestion).ToList();
         }
+
+        public void Sort()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

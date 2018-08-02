@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Dev2Be.Toolkit.Tests
@@ -15,10 +16,8 @@ namespace Dev2Be.Toolkit.Tests
 
             List<string> expected = new List<string>() { "Commande", "Commentaire", "Cycle" };
 
-            if (results == expected)
-                Assert.AreEqual(true, true);
-            else
-                Assert.AreEqual(false, false);
+            Assert.AreEqual(results.SequenceEqual(expected), true);
+ 
         }
 
         [TestMethod]
