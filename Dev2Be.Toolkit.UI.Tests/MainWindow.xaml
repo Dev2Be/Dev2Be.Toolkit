@@ -6,13 +6,14 @@
         xmlns:local="clr-namespace:Dev2Be.Toolkit.UI.Tests"
         xmlns:System="clr-namespace:System;assembly=mscorlib"
         xmlns:dtk="clr-namespace:Dev2Be.Toolkit.Wpf;assembly=Dev2Be.Toolkit"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TabControl>
             <TabItem Header="AutoCompleteTextBox">
                 <Grid>
-                    <dtk:AutoCompleteTextBox Margin="10,37,462,324" ShowSuggestions="{Binding Path=IsChecked, ElementName=ShowSuggestionsListCheckBox}">
+                    <dtk:AutoCompleteTextBox Margin="10,10,462,351" ShowSuggestions="{Binding Path=IsChecked, ElementName=ShowSuggestionsListCheckBox}">
                         <dtk:AutoCompleteTextBox.Suggestions>
                             <System:String>Assembly</System:String>
                             <System:String>Bibliothèque</System:String>
@@ -29,7 +30,7 @@
                             <System:String>Variable</System:String>
                         </dtk:AutoCompleteTextBox.Suggestions>
                     </dtk:AutoCompleteTextBox>
-                    <CheckBox x:Name="ShowSuggestionsListCheckBox" Content="Afficher la liste des suggestions" Margin="335,37,10,324" IsChecked="True"/>
+                    <CheckBox x:Name="ShowSuggestionsListCheckBox" Content="Afficher la liste des suggestions" Margin="329,10,10,351" IsChecked="True"/>
                 </Grid>
             </TabItem>
             <TabItem Header="BrowseTextBox">
@@ -52,6 +53,12 @@
                         </dtk:CheckedComboBox.Items>
                     </dtk:CheckedComboBox>
                     <TextBlock Text="{Binding Path=CheckedItems, ElementName=CheckedComboBox1}" Margin="441,10,10,348"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="WatermarkTextBox">
+                <Grid>
+                    <dtk:WatermarkTextBox Watermark="Essai" Margin="10,10,423,351"/>
+                    <Button Margin="368,10,10,351"></Button>
                 </Grid>
             </TabItem>
         </TabControl>

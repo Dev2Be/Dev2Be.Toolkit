@@ -1,7 +1,15 @@
-﻿Version 1.0.0-alpha.3.build. (Publiée le  Aout 2018) :
+﻿Version 1.0.0-alpha.4.build.154 (Publiée le 03 Aout 2018) :
+
+• Ajout :
+	- Composant WatermarkTextBox.
+
+-----------------------------------------------------------
+
+Version 1.0.0-alpha.3.build.139 (Publiée le 03 Aout 2018) :
 
 • Ajout :
 	- Composant CheckedComboBox.
+	- Méthodes d'extensions de la classe System.String.
 
 -----------------------------------------------------------
 

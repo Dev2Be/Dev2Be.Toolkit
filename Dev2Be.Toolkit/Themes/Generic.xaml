@@ -3,8 +3,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:Dev2Be.Toolkit.Wpf">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/AutoCompleteTextBox/Generic.xaml"/>
-        <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/BrowseTextBox/Generic.xaml"/>
-        <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/CheckedComboBox/Generic.xaml"/>
+        <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/AutoCompleteTextBox/AutoCompleteTextBox.xaml"/>
+        <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/BrowseTextBox/BrowseTextBox.xaml"/>
+        <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/CheckedComboBox/CheckedComboBox.xaml"/>
+        <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/WatermarkTextBox/WatermarkTextBox.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

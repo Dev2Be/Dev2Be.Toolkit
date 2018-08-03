@@ -70,11 +70,12 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enumerations\StringComparaison.cs" />
+    <Compile Include="Enumerations\StringComparison.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseMode.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseTextBox.cs" />
     <Compile Include="Wpf\CheckedComboBox\CheckedComboBox.cs" />
+    <Compile Include="Wpf\WatermarkTextBox\WatermarkTextBox.cs" />
     <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -82,15 +83,19 @@
     <Compile Include="Wpf\AutoCompleteTextBox\AutoCompleteTextBox.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Wpf\AutoCompleteTextBox\Generic.xaml">
+    <Page Include="Wpf\AutoCompleteTextBox\AutoCompleteTextBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Wpf\BrowseTextBox\Generic.xaml">
+    <Page Include="Wpf\BrowseTextBox\BrowseTextBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Wpf\CheckedComboBox\Generic.xaml">
+    <Page Include="Wpf\CheckedComboBox\CheckedComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wpf\WatermarkTextBox\WatermarkTextBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
