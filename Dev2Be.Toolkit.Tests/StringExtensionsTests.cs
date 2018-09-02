@@ -110,5 +110,25 @@ namespace Dev2Be.Toolkit.Tests
 
             Assert.AreEqual(false, isEmail);
         }
+
+        [TestMethod]
+        public void IsNumericalStringTest()
+        {
+            string s = "123";
+
+            bool isNumericalString = s.IsNumerical();
+
+            Assert.AreEqual(true, isNumericalString);
+        }
+
+        [TestMethod]
+        public void IsNotNumericalStringTest()
+        {
+            string s = "12z3";
+
+            bool isNumericalString = s.IsNumerical();
+
+            Assert.AreEqual(false, isNumericalString);
+        }
     }
 }

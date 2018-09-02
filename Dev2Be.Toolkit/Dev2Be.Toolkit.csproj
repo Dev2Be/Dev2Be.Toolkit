@@ -48,7 +48,7 @@
     <UpdateAssemblyInfoVersion>True</UpdateAssemblyInfoVersion>
     <AssemblyInfoVersionSettings>None.None.None.None</AssemblyInfoVersionSettings>
     <UpdatePackageVersion>False</UpdatePackageVersion>
-    <AssemblyInfoVersionType>SemVer1</AssemblyInfoVersionType>
+    <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
     <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
     <AssemblyInfoVersionSemVerSettings>AssemblyVersion.NoneWithAutoReset.Alpha</AssemblyInfoVersionSemVerSettings>
   </PropertyGroup>
@@ -75,6 +75,7 @@
     <Compile Include="Wpf\BrowseTextBox\BrowseMode.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseTextBox.cs" />
     <Compile Include="Wpf\CheckedComboBox\CheckedComboBox.cs" />
+    <Compile Include="Wpf\NumericUpDown\NumericUpDown.cs" />
     <Compile Include="Wpf\WatermarkTextBox\WatermarkTextBox.cs" />
     <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -92,6 +93,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Wpf\CheckedComboBox\CheckedComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wpf\NumericUpDown\NumericUpDown.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,4 +1,11 @@
-﻿Version 1.0.0-alpha.4.build.154 (Publiée le 03 Aout 2018) :
+﻿Version 1.0.0-alpha.5.build.225 (Publiée le 02 Septembre 2018) :
+
+• Ajout :
+	- Composant NumericUpDown.
+
+-----------------------------------------------------------
+
+Version 1.0.0-alpha.4.build.154 (Publiée le 03 Aout 2018) :
 
 • Ajout :
 	- Composant WatermarkTextBox.

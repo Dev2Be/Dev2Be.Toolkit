@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:Dev2Be.Toolkit.UI.Tests"
         xmlns:System="clr-namespace:System;assembly=mscorlib"
         xmlns:dtk="clr-namespace:Dev2Be.Toolkit.Wpf;assembly=Dev2Be.Toolkit"
-        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -57,8 +56,18 @@
             </TabItem>
             <TabItem Header="WatermarkTextBox">
                 <Grid>
-                    <dtk:WatermarkTextBox Watermark="Essai" Margin="10,10,423,351"/>
-                    <Button Margin="368,10,10,351"></Button>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="467*"/>
+                        <ColumnDefinition Width="319*"/>
+                    </Grid.ColumnDefinitions>
+                    <dtk:WatermarkTextBox Watermark="Essai" Margin="10,10,104,351"/>
+                    <Button Margin="368,10,10,351" Grid.ColumnSpan="2"></Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="NumericUpDown">
+                <Grid>
+                    <dtk:NumericUpDown Watermark="Essai" Margin="10,10,423,351" Minimum="0" Maximum="100" Value="14"/>
+                    <Button Margin="643,10,10,351"></Button>
                 </Grid>
             </TabItem>
         </TabControl>
