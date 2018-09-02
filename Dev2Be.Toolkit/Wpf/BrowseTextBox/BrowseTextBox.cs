@@ -17,7 +17,7 @@ namespace Dev2Be.Toolkit.Wpf
     public class BrowseTextBox : AutoCompleteTextBox
     {
         #region Variables
-        public DependencyProperty BrowseModeProperty = DependencyProperty.RegisterAttached("BrowseMode", typeof(BrowseMode), typeof(BrowseMode), new PropertyMetadata(BrowseMode.File));
+        public static DependencyProperty BrowseModeProperty = DependencyProperty.RegisterAttached("BrowseMode", typeof(BrowseMode), typeof(BrowseMode), new PropertyMetadata(BrowseMode.File));
 
         /// <summary>
         /// Obtient ou définit le mode de navigation utilisé par la <see cref="BrowseTextBox"./>

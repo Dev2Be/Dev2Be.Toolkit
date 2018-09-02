@@ -14,7 +14,7 @@ namespace Dev2Be.Toolkit.Wpf
     /// </summary>
     public class CheckedComboBox : ComboBox
     {
-        DependencyProperty SeparatorProperty = DependencyProperty.RegisterAttached("Separator", typeof(char), typeof(CheckedComboBox), new PropertyMetadata(','));
+        public static DependencyProperty SeparatorProperty = DependencyProperty.RegisterAttached("Separator", typeof(char), typeof(CheckedComboBox), new PropertyMetadata(','));
 
         /// <summary>
         /// Obtient ou définit le séparateur utilisé par la <see cref="CheckedComboBox"/>
@@ -25,7 +25,7 @@ namespace Dev2Be.Toolkit.Wpf
             set { SetValue(SeparatorProperty, value); }
         }
 
-        DependencyProperty CheckedItemsProperty = DependencyProperty.RegisterAttached("CheckedItems", typeof(string), typeof(CheckedComboBox), new PropertyMetadata(""));
+        public static DependencyProperty CheckedItemsProperty = DependencyProperty.RegisterAttached("CheckedItems", typeof(string), typeof(CheckedComboBox), new PropertyMetadata(""));
 
         /// <summary>
         /// Obtenir les éléments sélectionnés par l'utilisateur.

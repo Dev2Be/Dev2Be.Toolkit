@@ -1,4 +1,11 @@
-﻿Version 1.0.0-alpha.5.build.225 (Publiée le 02 Septembre 2018) :
+﻿Version 1.0.0-alpha.5.build.227 (Publiée le 02 Septembre 2018) :
+
+• Correction :
+	DTK01 → Impossible de créer plusieurs instances de certains composants.
+
+-----------------------------------------------------------
+
+Version 1.0.0-alpha.5.build.225 (Publiée le 02 Septembre 2018) :
 
 • Ajout :
 	- Composant NumericUpDown.
