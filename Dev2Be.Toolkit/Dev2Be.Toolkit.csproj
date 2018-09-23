@@ -70,6 +70,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="Enumerations\StringComparison.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseMode.cs" />

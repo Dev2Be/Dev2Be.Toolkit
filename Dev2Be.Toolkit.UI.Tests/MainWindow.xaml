@@ -56,7 +56,7 @@
             </TabItem>
             <TabItem Header="ExtendedListView">
                 <Grid>
-                    <dtk:ExtendedListView x:Name="TestExtendedListView" Margin="10,10,455,58" IsSortable="{Binding Path=IsChecked, ElementName=IsSortableCheckBox}">
+                    <dtk:ExtendedListView x:Name="TestExtendedListView" Margin="10,10,455,58" IsSortable="{Binding Path=IsChecked, ElementName=IsSortableCheckBox}" IsHeaderVisible="{Binding Path=IsChecked, ElementName=IsHeaderVisibleCheckBox}">
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Colonne 1" DisplayMemberBinding="{Binding Item}"/>
@@ -64,6 +64,7 @@
                         </ListView.View>
                     </dtk:ExtendedListView>
                     <CheckBox x:Name="IsSortableCheckBox" Content="Activer le tri de la ListView" Margin="336,10,0,354" IsChecked="True"/>
+                    <CheckBox x:Name="IsHeaderVisibleCheckBox" Content="Afficher l'en-tête des colonnes de la ListView" Margin="336,37,0,327" IsChecked="True"/>
                 </Grid>
             </TabItem>
             <TabItem Header="NumericUpDown">
