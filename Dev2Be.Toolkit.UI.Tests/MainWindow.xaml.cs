@@ -23,6 +23,10 @@ namespace Dev2Be.Toolkit.UI.Tests
         public MainWindow()
         {
             InitializeComponent();
+
+            List<ColumnItem> columnItems = new List<ColumnItem>() { new ColumnItem() { Item = "Assembly" }, new ColumnItem() { Item = "Commande" }, new ColumnItem() { Item = "Bibliothèque" }, new ColumnItem() { Item = "Commande" }, new ColumnItem() { Item = "Cycle" }, new ColumnItem() { Item = "Développement" }, new ColumnItem() { Item = "Commentaire" }, new ColumnItem() { Item = "namespace" }, new ColumnItem() { Item = "private" }, new ColumnItem() { Item = "protected" }, new ColumnItem() { Item = "Variable" }, new ColumnItem() { Item = "public" }, new ColumnItem() { Item = "Valeur" }, new ColumnItem() { Item = "Programmation" } };
+
+            TestExtendedListView.ItemsSource = columnItems;
         }
 
         private void BrowseModeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

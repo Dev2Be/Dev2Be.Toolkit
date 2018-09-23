@@ -54,6 +54,24 @@
                     <TextBlock Text="{Binding Path=CheckedItems, ElementName=CheckedComboBox1}" Margin="441,10,10,348"/>
                 </Grid>
             </TabItem>
+            <TabItem Header="ExtendedListView">
+                <Grid>
+                    <dtk:ExtendedListView x:Name="TestExtendedListView" Margin="10,10,455,58" IsSortable="{Binding Path=IsChecked, ElementName=IsSortableCheckBox}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Colonne 1" DisplayMemberBinding="{Binding Item}"/>
+                            </GridView>
+                        </ListView.View>
+                    </dtk:ExtendedListView>
+                    <CheckBox x:Name="IsSortableCheckBox" Content="Activer le tri de la ListView" Margin="336,10,0,354" IsChecked="True"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="NumericUpDown">
+                <Grid>
+                    <dtk:NumericUpDown Watermark="Essai" Margin="10,10,423,351" Minimum="0" Maximum="100" Value="14"/>
+                    <Button Margin="643,10,10,351"></Button>
+                </Grid>
+            </TabItem>
             <TabItem Header="WatermarkTextBox">
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -62,12 +80,6 @@
                     </Grid.ColumnDefinitions>
                     <dtk:WatermarkTextBox Watermark="Essai" Margin="10,10,104,351"/>
                     <Button Margin="368,10,10,351" Grid.ColumnSpan="2"></Button>
-                </Grid>
-            </TabItem>
-            <TabItem Header="NumericUpDown">
-                <Grid>
-                    <dtk:NumericUpDown Watermark="Essai" Margin="10,10,423,351" Minimum="0" Maximum="100" Value="14"/>
-                    <Button Margin="643,10,10,351"></Button>
                 </Grid>
             </TabItem>
         </TabControl>

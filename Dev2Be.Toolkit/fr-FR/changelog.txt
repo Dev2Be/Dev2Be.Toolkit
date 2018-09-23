@@ -1,4 +1,12 @@
-﻿Version 1.0.0-alpha.5.build.227 (Publiée le 02 Septembre 2018) :
+﻿Version 1.0.0-alpha.7.build.246 (Publiée le 23 Septembre 2018) :
+
+• Ajout :
+	- Composant NumericUpDown.
+		↪ Possibilité d'activer/désactiver le tri des colonnes et de les trier.
+
+-----------------------------------------------------------
+
+Version 1.0.0-alpha.6.build.227 (Publiée le 02 Septembre 2018) :
 
 • Correction :
 	DTK01 → Impossible de créer plusieurs instances de certains composants.
