@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="Converters\InvertVisibilityConverter.cs" />
     <Compile Include="Enumerations\StringComparison.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseMode.cs" />
@@ -78,6 +79,8 @@
     <Compile Include="Wpf\CheckedComboBox\CheckedComboBox.cs" />
     <Compile Include="Wpf\ExtendedListView.cs" />
     <Compile Include="Wpf\NumericUpDown\NumericUpDown.cs" />
+    <Compile Include="Wpf\RevealPasswordBox\PasswordRevealMode.cs" />
+    <Compile Include="Wpf\RevealPasswordBox\RevealPasswordBox.cs" />
     <Compile Include="Wpf\WatermarkTextBox\WatermarkTextBox.cs" />
     <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -103,6 +106,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Wpf\NumericUpDown\NumericUpDown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wpf\RevealPasswordBox\RevealPasswordBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -137,6 +144,8 @@
   <ItemGroup>
     <Resource Include="fr-FR\changelog.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Wpf\RevealPasswordBox\Icons\PasswordRevealButton.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

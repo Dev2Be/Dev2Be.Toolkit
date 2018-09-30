@@ -73,14 +73,15 @@
                     <Button Margin="643,10,10,351"></Button>
                 </Grid>
             </TabItem>
+            <TabItem Header="RevealPasswordBox">
+                <Grid>
+                    <dtk:RevealPasswordBox Margin="10,10,423,351" Password=""/>
+                </Grid>
+            </TabItem>
             <TabItem Header="WatermarkTextBox">
                 <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="467*"/>
-                        <ColumnDefinition Width="319*"/>
-                    </Grid.ColumnDefinitions>
                     <dtk:WatermarkTextBox Watermark="Essai" Margin="10,10,104,351"/>
-                    <Button Margin="368,10,10,351" Grid.ColumnSpan="2"></Button>
+                    <Button Margin="368,10,10,351" Grid.ColumnSpan="2"/>
                 </Grid>
             </TabItem>
         </TabControl>

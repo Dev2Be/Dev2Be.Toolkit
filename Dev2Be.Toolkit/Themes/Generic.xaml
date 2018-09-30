@@ -6,7 +6,8 @@
         <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/AutoCompleteTextBox/AutoCompleteTextBox.xaml"/>
         <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/BrowseTextBox/BrowseTextBox.xaml"/>
         <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/CheckedComboBox/CheckedComboBox.xaml"/>
-        <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/NumericUpDown/NumericUpDown.xaml" />
+        <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/NumericUpDown/NumericUpDown.xaml"/>
+        <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/RevealPasswordBox/RevealPasswordBox.xaml"/>
         <ResourceDictionary Source="/Dev2Be.Toolkit;component/Wpf/WatermarkTextBox/WatermarkTextBox.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
