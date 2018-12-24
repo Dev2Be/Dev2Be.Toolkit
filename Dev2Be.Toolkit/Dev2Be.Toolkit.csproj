@@ -72,7 +72,11 @@
   <ItemGroup>
     <Compile Include="Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="Converters\InvertVisibilityConverter.cs" />
+    <Compile Include="Enumerations\ImageFormat.cs" />
+    <Compile Include="Enumerations\PathType.cs" />
     <Compile Include="Enumerations\StringComparison.cs" />
+    <Compile Include="Extensions\BitmapImage.cs" />
+    <Compile Include="Extensions\Image.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseMode.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseTextBox.cs" />

@@ -1,4 +1,11 @@
-﻿Version 1.0.0-alpha.9.build.305 (Publiée le 30 Septembre 2018) :
+﻿Version 1.0.0-alpha.10.build.306 (Publié le 24 Décembre 2018) :
+
+• Ajout :
+	- Extensions pour les classes System.Windows.Controls.Image et System.Windows.Media.Imaging.BitmapControl.
+
+-----------------------------------------------------------
+
+Version 1.0.0-alpha.9.build.305 (Publiée le 30 Septembre 2018) :
 
 • Ajout :
 	- Composant RevealPasswordBox.
