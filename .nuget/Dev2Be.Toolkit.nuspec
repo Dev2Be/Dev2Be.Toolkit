@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>Dev2Be.Toolkit</id>
+    <version>$version$</version>
+    <title>Dev2Be.Toolkit</title>
+    <authors>Dev2Be</authors>
+    <owners>Dev2Be</owners>
+    <license type="expression">GPL-3.0-only</license>
+    <projectUrl>https://github.com/Dev2Be/Dev2Be.Toolkit</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Dev2Be.Toolkit est une bibliothèque ajoutant des contrôles personnalisés et des méthodes permettant d'étendre certaines classes.</description>
+    <releaseNotes>$releaseNotes$</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1" />
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="..\src\Dev2Be.Toolkit\bin\$configuration$\*.dll" target="lib\net461" />
+  </files>
+</package>

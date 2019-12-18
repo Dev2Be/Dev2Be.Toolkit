@@ -10,3 +10,4 @@
 /src/Dev2Be.Toolkit.Tests/obj/
 /src/Dev2Be.Toolkit.UI.Tests/bin
 /src/Dev2Be.Toolkit.UI.Tests/obj
+*.nupkg
