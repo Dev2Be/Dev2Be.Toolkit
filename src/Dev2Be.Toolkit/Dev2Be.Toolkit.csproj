@@ -78,7 +78,9 @@
     <Compile Include="Enumerations\StringComparison.cs" />
     <Compile Include="Extensions\BitmapImage.cs" />
     <Compile Include="Extensions\Image.cs" />
-    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\List.cs" />
+    <Compile Include="Extensions\String.cs" />
+    <Compile Include="SystemIcons.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseMode.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseTextBox.cs" />
     <Compile Include="Wpf\CheckedComboBox\CheckedComboBox.cs" />

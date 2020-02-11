@@ -1,4 +1,11 @@
-﻿﻿Version 1.0.0-alpha.11.build.310 (Publié le 13 Décembre 2019) :
+﻿﻿Version 1.0.0-alpha.12.build.312 (Publié le 11 Février 2020) :
+
+• Ajout :
+	- Lecture des informations d'une assembly.
+
+-----------------------------------------------------------
+
+﻿Version 1.0.0-alpha.11.build.310 (Publié le 13 Décembre 2019) :
 
 • Ajout :
 	- Lecture des informations d'une assembly.
