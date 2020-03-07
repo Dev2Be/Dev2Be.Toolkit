@@ -1,11 +1,11 @@
 param(
-    [string]$Version = "1.0.0-alpha.11"
+    [string]$Version
 )
 
 $year = [System.DateTime]::Now.ToString("yyyy")
-$copyright = "Copyright Dev2Be © 2018 - $year"
+$copyright = "Copyright Dev2Be Â© 2018 - $year"
 $configuration = "Release"
-$releaseNotes = "Ajout : Lecture des informations d'une assembly."
+$releaseNotes = "https://github.com/Dev2Be/Dev2Be.Toolkit/blob/master/src/Dev2Be.Toolkit/fr-FR/changelog.txt"
 
 function New-Nuget {
     param (
