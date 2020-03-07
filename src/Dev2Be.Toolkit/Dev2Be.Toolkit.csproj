@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInformations.cs" />
+    <Compile Include="Comparers\DefaultComparer.cs" />
     <Compile Include="Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="Converters\InvertVisibilityConverter.cs" />
     <Compile Include="Enumerations\ImageFormat.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Enumerations\StringComparison.cs" />
     <Compile Include="Extensions\BitmapImage.cs" />
     <Compile Include="Extensions\Image.cs" />
+    <Compile Include="Extensions\List.cs" />
     <Compile Include="Extensions\String.cs" />
     <Compile Include="SystemIcons.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseMode.cs" />
