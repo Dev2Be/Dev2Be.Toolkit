@@ -15,7 +15,7 @@ namespace Dev2Be.Toolkit.Comparers
 
         public int GetHashCode(T obj)
         {
-            throw new NotImplementedException();
+            return obj.GetHashCode();
         }
     }
 }
