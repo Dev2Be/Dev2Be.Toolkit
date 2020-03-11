@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dev2Be.Toolkit.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,6 +36,14 @@ namespace Dev2Be.Toolkit.UI.Tests
                 BrowseTextBox1.BrowseMode = Wpf.BrowseMode.File;
             else
                 BrowseTextBox1.BrowseMode = Wpf.BrowseMode.Folder;
+        }
+
+        private void RefreshConnectedStateButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (NetworkHelper.IsInternetAvailable())
+                ConnectedInternetStateTextBlock.Text = "Internet is connected";
+            else
+                ConnectedInternetStateTextBlock.Text = "Internet is not connected";
         }
     }
 }

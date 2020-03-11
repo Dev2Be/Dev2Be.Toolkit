@@ -12,7 +12,7 @@
         <TabControl>
             <TabItem Header="AutoCompleteTextBox">
                 <Grid>
-                    <dtk:AutoCompleteTextBox Margin="10,10,462,351" ShowSuggestions="{Binding Path=IsChecked, ElementName=ShowSuggestionsListCheckBox}">
+                    <dtk:AutoCompleteTextBox Margin="10,10,462,329" ShowSuggestions="{Binding Path=IsChecked, ElementName=ShowSuggestionsListCheckBox}">
                         <dtk:AutoCompleteTextBox.Suggestions>
                             <System:String>Assembly</System:String>
                             <System:String>Bibliothèque</System:String>
@@ -29,14 +29,14 @@
                             <System:String>Variable</System:String>
                         </dtk:AutoCompleteTextBox.Suggestions>
                     </dtk:AutoCompleteTextBox>
-                    <CheckBox x:Name="ShowSuggestionsListCheckBox" Content="Afficher la liste des suggestions" Margin="329,10,10,351" IsChecked="True"/>
+                    <CheckBox x:Name="ShowSuggestionsListCheckBox" Content="Afficher la liste des suggestions" Margin="329,10,10,329" IsChecked="True"/>
                 </Grid>
             </TabItem>
             <TabItem Header="BrowseTextBox">
                 <Grid>
-                    <dtk:BrowseTextBox x:Name="BrowseTextBox1" Margin="10,10,355,351"/>
-                    <TextBlock Text="BrowseMode :" Margin="436,10,253,351" VerticalAlignment="Center"/>
-                    <ComboBox x:Name="BrowseModeComboBox" SelectedIndex="0" SelectionChanged="BrowseModeComboBox_SelectionChanged" Margin="538,10,10,351">
+                    <dtk:BrowseTextBox x:Name="BrowseTextBox1" Margin="10,10,355,329"/>
+                    <TextBlock Text="BrowseMode :" Margin="436,8,253,329" VerticalAlignment="Center" Height="35"/>
+                    <ComboBox x:Name="BrowseModeComboBox" SelectedIndex="0" SelectionChanged="BrowseModeComboBox_SelectionChanged" Margin="538,10,10,329">
                         <ComboBoxItem Content="File"/>
                         <ComboBoxItem Content="Folder"/>
                     </ComboBox>
@@ -44,14 +44,14 @@
             </TabItem>
             <TabItem Header="CheckedComboBox">
                 <Grid>
-                    <dtk:CheckedComboBox x:Name="CheckedComboBox1" Margin="10,10,355,351">
+                    <dtk:CheckedComboBox x:Name="CheckedComboBox1" Margin="10,10,355,332">
                         <dtk:CheckedComboBox.Items>
                             <ComboBoxItem Content="Item 1"/>
                             <ComboBoxItem Content="Item 2"/>
                             <ComboBoxItem Content="Item 3"/>
                         </dtk:CheckedComboBox.Items>
                     </dtk:CheckedComboBox>
-                    <TextBlock Text="{Binding Path=CheckedItems, ElementName=CheckedComboBox1}" Margin="441,10,10,348"/>
+                    <TextBlock Text="{Binding Path=CheckedItems, ElementName=CheckedComboBox1}" Margin="441,10,10,332"/>
                 </Grid>
             </TabItem>
             <TabItem Header="ExtendedListView">
@@ -63,25 +63,31 @@
                             </GridView>
                         </ListView.View>
                     </dtk:ExtendedListView>
-                    <CheckBox x:Name="IsSortableCheckBox" Content="Activer le tri de la ListView" Margin="336,10,0,354" IsChecked="True"/>
-                    <CheckBox x:Name="IsHeaderVisibleCheckBox" Content="Afficher l'en-tête des colonnes de la ListView" Margin="336,37,0,327" IsChecked="True"/>
+                    <CheckBox x:Name="IsSortableCheckBox" Content="Activer le tri de la ListView" Margin="336,10,0,340" IsChecked="True"/>
+                    <CheckBox x:Name="IsHeaderVisibleCheckBox" Content="Afficher l'en-tête des colonnes de la ListView" Margin="336,37,0,310" IsChecked="True"/>
                 </Grid>
             </TabItem>
             <TabItem Header="NumericUpDown">
                 <Grid>
-                    <dtk:NumericUpDown Watermark="Essai" Margin="10,10,423,351" Minimum="0" Maximum="100" Value="14"/>
-                    <Button Margin="643,10,10,351"></Button>
+                    <dtk:NumericUpDown Watermark="Essai" Margin="10,10,423,329" Minimum="0" Maximum="100" Value="14"/>
+                    <Button Margin="408,10,10,329"></Button>
                 </Grid>
             </TabItem>
             <TabItem Header="RevealPasswordBox">
                 <Grid>
-                    <dtk:RevealPasswordBox Margin="10,10,423,351" Password=""/>
+                    <dtk:RevealPasswordBox Margin="10,10,423,331" Password=""/>
                 </Grid>
             </TabItem>
             <TabItem Header="WatermarkTextBox">
                 <Grid>
-                    <dtk:WatermarkTextBox Watermark="Essai" Margin="10,10,104,351"/>
-                    <Button Margin="368,10,10,351" Grid.ColumnSpan="2"/>
+                    <dtk:WatermarkTextBox Watermark="Essai" Margin="10,10,425,329"/>
+                    <Button Margin="368,10,10,329"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Check Internet Connection">
+                <Grid>
+                    <Button x:Name="RefreshConnectedStateButton" Content="Vérifier la connexion à Internet" Margin="10,10,598,329" Click="RefreshConnectedStateButton_Click"/>
+                    <TextBlock x:Name="ConnectedInternetStateTextBlock" Margin="10,48,10,10"/>
                 </Grid>
             </TabItem>
         </TabControl>

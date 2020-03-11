@@ -81,6 +81,7 @@
     <Compile Include="Extensions\Image.cs" />
     <Compile Include="Extensions\List.cs" />
     <Compile Include="Extensions\String.cs" />
+    <Compile Include="Helpers\NetworkHelper.cs" />
     <Compile Include="SystemIcons.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseMode.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseTextBox.cs" />

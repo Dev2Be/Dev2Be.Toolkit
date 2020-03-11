@@ -12,3 +12,4 @@
 /src/Dev2Be.Toolkit.UI.Tests/obj
 *.nupkg
 /src/packages
+/src/TestResults

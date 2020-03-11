@@ -1,4 +1,11 @@
-﻿﻿Version 1.0.0-alpha.13.build.336 (Publié le 07 Mars 2020) :
+﻿﻿Version 1.0.0-alpha.14.build.348 (Publié le 11 Mars 2020) :
+
+• Ajout :
+	- Helpers pour Internet.
+
+-----------------------------------------------------------
+﻿
+Version 1.0.0-alpha.13.build.336 (Publié le 07 Mars 2020) :
 
 • Ajout :
 	- Méthodes d'extensions pour la classe System.Collections.Generic.List<T>.
@@ -8,7 +15,7 @@
 ﻿Version 1.0.0-alpha.12.build.312 (Publié le 11 Février 2020) :
 
 • Ajout :
-	- Lecture des informations d'une assembly.
+	- Récupération des îcones systèmes.
 
 -----------------------------------------------------------
 
