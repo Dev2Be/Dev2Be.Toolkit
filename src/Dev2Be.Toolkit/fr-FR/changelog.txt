@@ -1,4 +1,11 @@
-﻿﻿Version 1.0.0-alpha.14.build.348 (Publié le 11 Mars 2020) :
+﻿﻿Version 1.0.0-alpha.15.build.450 (Publié le 02 Avril 2020) :
+
+• Ajout :
+	- Méthode de chiffrement/déchiffrement de données.
+
+-----------------------------------------------------------
+﻿
+Version 1.0.0-alpha.14.build.348 (Publié le 11 Mars 2020) :
 
 • Ajout :
 	- Helpers pour Internet.

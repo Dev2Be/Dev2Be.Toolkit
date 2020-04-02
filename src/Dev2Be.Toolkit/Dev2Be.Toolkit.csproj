@@ -55,6 +55,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -74,7 +75,11 @@
     <Compile Include="Comparers\DefaultComparer.cs" />
     <Compile Include="Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="Converters\InvertVisibilityConverter.cs" />
+    <Compile Include="Encrypting\AES.cs" />
+    <Compile Include="Encrypting\DataProtection.cs" />
+    <Compile Include="Encrypting\PasswordForce.cs" />
     <Compile Include="Enumerations\ImageFormat.cs" />
+    <Compile Include="Enumerations\PasswordScore.cs" />
     <Compile Include="Enumerations\PathType.cs" />
     <Compile Include="Enumerations\StringComparison.cs" />
     <Compile Include="Extensions\BitmapImage.cs" />
@@ -82,6 +87,8 @@
     <Compile Include="Extensions\List.cs" />
     <Compile Include="Extensions\String.cs" />
     <Compile Include="Helpers\NetworkHelper.cs" />
+    <Compile Include="Models\AESKey.cs" />
+    <Compile Include="Encrypting\Hash.cs" />
     <Compile Include="SystemIcons.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseMode.cs" />
     <Compile Include="Wpf\BrowseTextBox\BrowseTextBox.cs" />
@@ -156,5 +163,6 @@
   <ItemGroup>
     <Resource Include="Wpf\RevealPasswordBox\Icons\PasswordRevealButton.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -62,6 +62,12 @@
   <ItemGroup>
     <Compile Include="AssemblyInformationsTests.cs" />
     <Compile Include="AutoCompleteTextBoxTests.cs" />
+    <Compile Include="Encypting\AESTests.cs" />
+    <Compile Include="Encypting\CaesarShift.cs" />
+    <Compile Include="Encypting\CaesarShiftTests.cs" />
+    <Compile Include="Encypting\DataProtectionTests.cs" />
+    <Compile Include="Encypting\HashTests.cs" />
+    <Compile Include="Encypting\PasswordForceTests.cs" />
     <Compile Include="Helpers\NetworkHelperTests.cs" />
     <Compile Include="ListExtensionsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
